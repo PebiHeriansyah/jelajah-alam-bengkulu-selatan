@@ -70,6 +70,11 @@ Akses di browser melalui: `http://localhost:8000`
 
 Hasil build web statis siap saji juga tersedia di dalam direktori `build/web/` (`index.html`).
 
+### 3. Deploy ke Netlify
+
+Repository ini sudah dilengkapi file konfigurasi `netlify.toml` dengan target publish: `build/web`.
+Ketika dihubungkan ke Netlify, Netlify akan langsung men-deploy file web statis tanpa perlu build command tambahan.
+
 ---
 
 ## 🛠️ Lisensi & Kontribusi

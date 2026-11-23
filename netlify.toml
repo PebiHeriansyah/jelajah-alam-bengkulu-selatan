@@ -1,0 +1,5 @@
+# Netlify Configuration for Jelajah Alam Bengkulu Selatan (Pygbag Web Build)
+
+[build]
+  # Direktori yang berisi file hasil build web statis (index.html, APK/tar.gz WebAssembly, favicon)
+  publish = "build/web"
