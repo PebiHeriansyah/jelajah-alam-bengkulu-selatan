@@ -1,3 +1,4 @@
+import asyncio
 import math
 import random
 import sys
@@ -595,7 +596,7 @@ class ExplorerGame:
         pygame.display.flip()
 
 
-def main():
+async def main():
     game = ExplorerGame()
     while True:
         dt = min(0.05, clock.tick(FPS) / 1000.0)
@@ -606,7 +607,8 @@ def main():
             game.handle_event(event)
         game.update(dt)
         game.render()
+        await asyncio.sleep(0)
 
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())
