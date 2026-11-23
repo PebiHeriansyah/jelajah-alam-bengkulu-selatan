@@ -51,8 +51,8 @@ python -m venv .venv
 # Linux/macOS:
 source .venv/bin/activate
 
-# Install dependensi
-pip install -r requirements.txt
+# Install dependensi desktop
+pip install -r requirements-dev.txt
 
 # Jalankan game
 python main.py
